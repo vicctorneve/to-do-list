@@ -1,0 +1,94 @@
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   color: white;
+   overflow-x: hidden;
+}
+body{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   background: black url(../assets/img/bg-body.svg) center center;
+}
+.container{
+   border: 1px solid white;
+   position: relative;
+   margin: 20px;
+   border-radius: 10px;
+   position: relative;
+   padding: 10px;
+   width: 60vw;
+   min-width: 300px;
+   height: auto;
+   background-color: rgba(0, 0, 0, 0.473);
+   color: white;
+}
+.container h1{
+   text-align: center;
+   font-size: 2em;
+   margin: 20px 0;
+}
+.container-add-task{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   margin: 40px 0;
+}
+.container-add-task input{
+   color: black;
+   padding: 5px;
+   width: 60%;
+}
+.btn-add-task{
+   background: #1ae947 url(../assets/img/imgAddTask.png) center center;
+   background-size: cover;
+   border-radius: 100%;
+   cursor: pointer;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 30px;
+   height: 30px;
+}
+.btn-delete-all-task{
+   cursor: pointer;
+   display: none;
+   padding: 10px;
+   color: black;
+   text-transform: uppercase;
+   font-weight: bolder;
+   width: 100%;
+}
+.container-task{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin: 20px 0;
+}
+li.task{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgba(128, 128, 128, 0.479);
+   padding: 10px;
+}
+.delete{
+   cursor: pointer;
+   width: 30px;
+   height: 30px;
+   background: white url(../assets/img/removeTask.png);
+   background-size: cover;
+}
+.delete:hover{
+   background-color: aqua;
+}
+p.credito{
+   overflow: hidden;
+   margin: 20px;
+}
