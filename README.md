@@ -6,10 +6,11 @@
 🔗Link -> https://vicctorneve.github.io/to-do-list/
 
 ## Tecnologias:
+
 <ul>
-<li>HTML
-<li>CSS
-<li>JavaScript
+   <li><a href="https://www.w3schools.com/html/">HTML</a>
+   <li><a href="https://www.w3schools.com/css/">CSS</a>
+   <li><a href="https://www.w3schools.com/js/">JS</a>
 </ul>
 
 ### Status:
