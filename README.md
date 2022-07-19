@@ -6,9 +6,11 @@
 🔗Link -> https://vicctorneve.github.io/to-do-list/
 
 ## Tecnologias:
-<p>HTML</p>
-<p>CSS</p>
-<p>JavasCript</p>
+<ul>
+<li>HTML
+<li>CSS
+<li>JavaScript
+</ul>
 
 ### Status:
 <p>🚧 Em Construção 🚧</p>
