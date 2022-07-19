@@ -31,7 +31,6 @@ function createTask (textInput){
    cleanInput();
    createBtnDelete();
    saveTasks();
-   console.log(toDoList);
    toDoList.push(li);
    addBtnDeleteAllTasks();
 }

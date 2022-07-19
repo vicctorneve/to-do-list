@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap');
 *{
    margin: 0;
    padding: 0;
@@ -6,15 +7,18 @@
    overflow-x: hidden;
 }
 body{
+   
    width: 100vw;
    height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-   background: black url(../assets/img/bg-body.svg) center center;
+   background: black url(../assets/img/bg-body.svg) center center no-repeat;
+   background-size: cover;
 }
 .container{
+   font-family: 'Edu TAS Beginner', cursive;
    border: 1px solid white;
    position: relative;
    margin: 20px;
@@ -91,4 +95,5 @@ li.task{
 p.credito{
    overflow: hidden;
    margin: 20px;
+   color: black;
 }
