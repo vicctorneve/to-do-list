@@ -7,7 +7,6 @@
    overflow-x: hidden;
 }
 body{
-   
    width: 100vw;
    height: 100vh;
    display: flex;
@@ -18,7 +17,6 @@ body{
    background-size: cover;
 }
 .container{
-   font-family: 'Edu TAS Beginner', cursive;
    border: 1px solid white;
    position: relative;
    margin: 20px;
@@ -32,6 +30,7 @@ body{
    color: white;
 }
 .container h1{
+   font-family: 'Edu TAS Beginner', cursive;
    text-align: center;
    font-size: 2em;
    margin: 20px 0;
@@ -49,7 +48,7 @@ body{
    width: 60%;
 }
 .btn-add-task{
-   background: #1ae947 url(../assets/img/imgAddTask.png) center center;
+   background: white url(../assets/img/imgAddTask.png) center center;
    background-size: cover;
    border-radius: 100%;
    cursor: pointer;
@@ -90,7 +89,7 @@ li.task{
    background-size: cover;
 }
 .delete:hover{
-   background-color: aqua;
+   background-color: #A6F4FF;
 }
 p.credito{
    overflow: hidden;

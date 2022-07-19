@@ -6,25 +6,17 @@ let toDoList = [];
 let li;
 
 inputAddTask.addEventListener('keypress', function(e) {
-   if (e.keyCode === 13){
+   if (e.key === 'Enter'){
       if (!inputAddTask.value) return;
       createTask(inputAddTask.value);
    }
 })
-// function createCheckbox() {
-//    const checkbox = document.createElement('input')
-//    checkbox.type = 'checkbox';
-//    return checkbox
-// }
 btnAddTask.addEventListener('click', function () {
    if (!inputAddTask.value) return;
    createTask(inputAddTask.value)
 })
-
 function createTask (textInput){
    createLi();
-   // const checkbox = createCheckbox();
-   // li.appendChild(checkbox);
    li.innerText = textInput;
    addClassLi();
    containerTask.appendChild(li);
@@ -32,20 +24,22 @@ function createTask (textInput){
    createBtnDelete();
    saveTasks();
    toDoList.push(li);
-   addBtnDeleteAllTasks();
+   verifyQtdLi();
 }
-function addBtnDeleteAllTasks() {
-   toDoList.length >= 2 ? btnDeleteAllTasks.style.display = 'block' : btnDeleteAllTasks.style.display = 'none';
-}
-
-btnDeleteAllTasks.addEventListener('click', function () {
-   containerTask.innerHTML = '';
-   saveTasks();
-})
-
 function createLi() {li = document.createElement('li')}
 
 function addClassLi() {li.classList.add('task');}
+
+function verifyQtdLi() {
+   toDoList.length >= 2 ? btnDeleteAllTasks.style.display = 'block' : btnDeleteAllTasks.style.display = 'none';
+}
+btnDeleteAllTasks.addEventListener('click', function () {
+   containerTask.innerHTML = '';
+   toDoList = [];
+   verifyQtdLi();
+   saveTasks();
+});
+
 function cleanInput(){
    inputAddTask.value = '';
    inputAddTask.focus();
@@ -66,6 +60,8 @@ document.addEventListener('click', function(e) {
    const el = e.target;
    if (el.classList.contains('delete')) {
       el.parentElement.remove();
+      toDoList.pop();
+      verifyQtdLi();
       saveTasks();
    }
 });
@@ -91,6 +87,3 @@ function addBackupTask(){
    }
 }
 addBackupTask();
-
-
-
