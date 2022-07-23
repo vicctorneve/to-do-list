@@ -13,8 +13,9 @@ body{
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-   background: black url(../assets/img/bg-body.svg) center center no-repeat;
-   background-size: cover;
+   background: linear-gradient(to top, rgb(1, 1, 29), rgb(1, 1, 63));
+   /* background: linear-gradient(to top, rgb(231, 231, 231), white) */
+
 }
 .container{
    border: 1px solid white;
@@ -94,5 +95,5 @@ li.task{
 p.credito{
    overflow: hidden;
    margin: 20px;
-   color: black;
+   color: white;
 }
