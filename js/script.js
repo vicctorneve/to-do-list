@@ -4,7 +4,6 @@ const btnDeleteAllTasks = document.querySelector('.btn-delete-all-task');
 let containerTask = document.querySelector('.container-task');
 let toDoList = [];
 let li;
-
 inputAddTask.addEventListener('keypress', function(e) {
    if (e.key === 'Enter'){
       if (!inputAddTask.value) return;
@@ -27,12 +26,12 @@ function createTask (textInput){
    verifyQtdLi();
 }
 function createLi() {li = document.createElement('li')}
-
 function addClassLi() {li.classList.add('task');}
 
 function verifyQtdLi() {
    toDoList.length >= 2 ? btnDeleteAllTasks.style.display = 'block' : btnDeleteAllTasks.style.display = 'none';
 }
+
 btnDeleteAllTasks.addEventListener('click', function () {
    containerTask.innerHTML = '';
    toDoList = [];
